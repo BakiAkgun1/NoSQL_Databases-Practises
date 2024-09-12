@@ -1,4 +1,20 @@
 
+# NoSQL Veritabanı Sorguları ve ETL Projesi
+
+Bu proje, ArangoDB, Neo4j ve Python kullanılarak gerçekleştirilen veritabanı sorguları ve ETL işlemlerini içermektedir. Projede farklı veritabanı sistemleri üzerinde sorgular yapıldı, sonuçlar CSV formatında kaydedildi ve araştırma dokümanları oluşturuldu. Ayrıca Spotify veri seti kullanılarak Python'da ETL süreçleri uygulandı.
+
+## Proje Adımları:
+1. **ArangoDB Sorguları**: SQLite veritabanındaki tablolar JSON formatına dönüştürüldü ve ArangoDB üzerinde 15 farklı sorgu gerçekleştirildi. Sorgu sonuçları CSV formatında saklandı.
+   
+2. **Neo4j ve Cypher Sorguları**: Neo4j veritabanında, Cypher dili kullanılarak 20 farklı sorgu yapıldı ve sonuçlar CSV dosyasına kaydedildi.
+
+3. **Araştırma Dokümanları**: ArangoDB, Neo4j ve Cypher gibi veritabanı sistemleri hakkında çeşitli araştırmalar yapıldı ve ilgili dokümanlar oluşturuldu.
+
+4. **Python ile ETL İşlemleri**: Spotify veri seti kullanılarak Python'da `pandas` kütüphanesi ile 20 farklı ETL işlemi gerçekleştirildi ve süreçler Jupyter Notebook formatında belgelendi.
+
+---
+
+Bu proje, veritabanı yönetimi, sorgulama dilleri ve veri işleme alanlarında çalışmak isteyenler için kapsamlı bir referans niteliğindedir.
 ### 1-ArangoDB_Queries Dosyası
 
 Bu proje, bir film kiralama veritabanı (`sqlite_sqlite.db`) üzerinde çeşitli SQL ve ArangoDB sorguları gerçekleştirilen bir çalışmadır. Proje kapsamında veritabanı yapıları üzerinde işlemler yapılmış, veriler `json` formatına dönüştürülmüş, 15 farklı SQL ve ArangoDB sorgusu oluşturulmuştur. Ayrıca ArangoDB üzerinde veritabanı kurularak sorgular gerçekleştirilmiştir.
