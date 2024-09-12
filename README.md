@@ -55,7 +55,7 @@ with open('film.json', 'w') as json_file:
 
 Bu kod parçası, `film` tablosundaki tüm verileri `film.json` dosyasına kaydeder.
 
-### ArangoDB Sorguları
+## 1- ArangoDB Sorguları
 ArangoDB Community Edition kullanılarak bir veritabanı ortamı oluşturulmuş ve 15 farklı sorgu gerçekleştirilmiştir. Sorguların tümü `ArangoDB-15ETL.docx` dosyasında bulunmaktadır.
 
 ###  ArangoDB Veritabanına Python ile Bağlanma
@@ -89,7 +89,7 @@ Bu bölümde, **sqlite_sqlite.db** dosyası üzerinden gerçekleştirilen SQL ve
 - **result.csv**: ArangoDB sorgularının sonuçlarının CSV formatındaki çıktısı.
 - **arango.ipynb**: ArangoDB veritabanına Python ile bağlanma ve sorguların gerçekleştirilmesi.
 
-### 3. Cypher-Queries
+## 2. Cypher-Queries
 ![image](https://github.com/user-attachments/assets/5c5ad5cb-2a68-4b03-983e-fb6565e05360)
 
 Bu bölümde, Neo4j veritabanı üzerinde gerçekleştirilmiş Cypher dilindeki 20 sorgu yer almaktadır:
@@ -100,7 +100,7 @@ Bu bölümde, Neo4j veritabanı üzerinde gerçekleştirilmiş Cypher dilindeki 
 
 Neo4j veritabanına bağlı olarak, Spotify veri seti kullanılarak 20 farklı Cypher sorgusu gerçekleştirilmiştir. Bu sorgulara ve sonuçlarına ilgili dosyalardan ulaşabilirsiniz.
 
-### 4. Araştırma Dokümanları
+## 3. Araştırma Dokümanları
 
 Bu bölümde, ArangoDB, Cypher, Neo4j ve diğer veritabanı sistemleri hakkında yapılan araştırmalar bulunmaktadır:
 ![image](https://github.com/user-attachments/assets/314ff5a7-a43d-45b1-9d76-9eaece423841)
@@ -112,7 +112,7 @@ Bu bölümde, ArangoDB, Cypher, Neo4j ve diğer veritabanı sistemleri hakkında
 
 Bu dokümanlar, farklı veritabanı sistemleri hakkında bilgi edinmek ve karşılaştırmalar yapmak isteyenler için hazırlanmıştır.
 
-### 5. Python-20-spotify_ETL
+## 4. Python-20-spotify_ETL
 ![image](https://github.com/user-attachments/assets/3d83e7bc-a89f-47eb-a3ab-5db3e5263d72)
 
 Bu bölümde, **spotify.csv** veri seti kullanılarak Python'da gerçekleştirilen ETL işlemleri yer almaktadır:
