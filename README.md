@@ -12,9 +12,11 @@ Bu proje, ArangoDB, Neo4j ve Python kullanılarak gerçekleştirilen veritabanı
 
 4. **Python ile ETL İşlemleri**: Spotify veri seti kullanılarak Python'da `pandas` kütüphanesi ile 20 farklı ETL işlemi gerçekleştirildi ve süreçler Jupyter Notebook formatında belgelendi.
 
----
 
 Bu proje, veritabanı yönetimi, sorgulama dilleri ve veri işleme alanlarında çalışmak isteyenler için kapsamlı bir referans niteliğindedir.
+
+![_e9b99b89-6d81-4125-8d5e-8a087ffbc771](https://github.com/user-attachments/assets/1c3bea86-6383-41d7-9113-c3f6874ec53e)
+
 ### 1-ArangoDB_Queries Dosyası
 
 Bu proje, bir film kiralama veritabanı (`sqlite_sqlite.db`) üzerinde çeşitli SQL ve ArangoDB sorguları gerçekleştirilen bir çalışmadır. Proje kapsamında veritabanı yapıları üzerinde işlemler yapılmış, veriler `json` formatına dönüştürülmüş, 15 farklı SQL ve ArangoDB sorgusu oluşturulmuştur. Ayrıca ArangoDB üzerinde veritabanı kurularak sorgular gerçekleştirilmiştir.
