@@ -79,7 +79,6 @@ Bu kod ile ArangoDB veritabanına bağlanabilir ve sorgularınızı Python ortam
 ArangoDB üzerinde yapılan sorguların sonuçları `result.csv` dosyasına kaydedilmiştir. Bu dosya, sorguların sonuçlarını incelemek isteyen kullanıcılar için kullanıma hazırdır.
 
 
-### 2. ArangoDB-Queries
 ![image](https://github.com/user-attachments/assets/791e20e4-58f8-464f-9a8d-bb5b104c73e2)
 
 Bu bölümde, **sqlite_sqlite.db** dosyası üzerinden gerçekleştirilen SQL ve ArangoDB sorguları bulunmaktadır:
