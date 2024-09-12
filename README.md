@@ -22,7 +22,7 @@ JSON formatına çevirme işlemi şu şekilde gerçekleştirilmiştir:
 ```python
 import sqlite3
 import json
-
+#film tablosu için örnek
 conn = sqlite3.connect('sqlite-sakila.db')
 cursor = conn.cursor()
 cursor.execute("SELECT * FROM film")
