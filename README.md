@@ -1,1 +1,61 @@
-deneme
+
+## 1-ArangoDB_Queries Dosyası
+
+Bu proje, bir film kiralama veritabanı (`sqlite_sqlite.db`) üzerinde çeşitli SQL ve ArangoDB sorguları gerçekleştirilen bir çalışmadır. Proje kapsamında veritabanı yapıları üzerinde işlemler yapılmış, veriler `json` formatına dönüştürülmüş, 15 farklı SQL ve ArangoDB sorgusu oluşturulmuştur. Ayrıca ArangoDB üzerinde veritabanı kurularak sorgular gerçekleştirilmiştir.
+
+## Proje Dosyaları
+
+1. **ArangoDB-Queries**
+    - **sqlite_sqlite.db**: Film kiralama veritabanı SQLite formatında saklanmaktadır.
+    - **json.ipynb**: SQLite veritabanı tablolarını JSON formatına çevirmek için kullanılan Jupyter Notebook dosyasıdır.
+    - **ArangoDB-15ETL.docx**: 15 farklı SQL ve ArangoDB sorgusunun bulunduğu doküman.
+    - **result.csv**: ArangoDB sorguları sonucunda elde edilen verilerin CSV formatındaki çıktıları.
+    - **arango.ipynb**: Python kullanarak ArangoDB veritabanına bağlanma ve sorgu çalıştırma işlemlerinin yapıldığı Jupyter Notebook dosyası.
+
+## Projenin İçeriği
+
+### 1. Veritabanı JSON Formatına Çevirme
+Projede, `sqlite_sqlite.db` dosyasındaki film kiralama veritabanının tabloları SQLite kullanılarak sorgulanmış ve JSON formatına çevrilmiştir.
+
+JSON formatına çevirme işlemi şu şekilde gerçekleştirilmiştir:
+
+```python
+import sqlite3
+import json
+
+conn = sqlite3.connect('sqlite-sakila.db')
+cursor = conn.cursor()
+cursor.execute("SELECT * FROM film")
+rows = cursor.fetchall()
+columns = [desc[0] for desc in cursor.description]
+
+data = [dict(zip(columns, row)) for row in rows]
+
+with open('film.json', 'w') as json_file:
+    json.dump(data, json_file, indent= 4)
+```
+
+Bu kod parçası, `film` tablosundaki tüm verileri `film.json` dosyasına kaydeder.
+
+### 2. ArangoDB Sorguları
+ArangoDB Community Edition kullanılarak bir veritabanı ortamı oluşturulmuş ve 15 farklı sorgu gerçekleştirilmiştir. Sorguların tümü `ArangoDB-15ETL.docx` dosyasında bulunmaktadır.
+
+### 3. ArangoDB Veritabanına Python ile Bağlanma
+ArangoDB veritabanına Python kullanarak bağlanmak ve sorguları çalıştırmak için aşağıdaki kod kullanılmıştır:
+
+```python
+from arango import ArangoClient # type: ignore
+import pandas as pd
+
+client = ArangoClient()
+
+sys_db = client.db('_system', username=' ', password=' ')
+
+databases = sys_db.databases()
+print("Veritabanları:", databases)
+```
+
+Bu kod ile ArangoDB veritabanına bağlanabilir ve sorgularınızı Python ortamında gerçekleştirebilirsiniz.
+
+### 4. Sorgu Sonuçlarının CSV'ye Kaydedilmesi
+ArangoDB üzerinde yapılan sorguların sonuçları `result.csv` dosyasına kaydedilmiştir. Bu dosya, sorguların sonuçlarını incelemek isteyen kullanıcılar için kullanıma hazırdır.
